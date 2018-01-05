@@ -1,9 +1,9 @@
 """When you write your constants to help you."""
 
 
-class Constants(object):
+class {{cookiecutter.project_name}}_context(object):
     """
-    Constants class.
+    Context class.
 
     You can use this class like a monkey path class for don't generate
         side effect using context.
