@@ -1,4 +1,5 @@
-"""Module example.
+"""
+Module example.
 
 You can use modules for simplify the functions calls in your tests.
 """

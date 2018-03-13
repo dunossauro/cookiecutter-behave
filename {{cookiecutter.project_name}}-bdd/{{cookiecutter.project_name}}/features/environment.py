@@ -27,6 +27,10 @@ def before_tag(context, tag):
     pass
 
 
+def after_step(context, step):
+    pass
+
+
 def after_tag(context, tag):
     pass
 
