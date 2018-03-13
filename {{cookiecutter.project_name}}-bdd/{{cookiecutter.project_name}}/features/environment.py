@@ -1,5 +1,6 @@
 """Hooks file."""
 from behave.tag_matcher import ActiveTagMatcher
+from ipdb import post_mortem
 
 
 active_tag_value_provider = {
@@ -28,7 +29,8 @@ def before_tag(context, tag):
 
 
 def after_step(context, step):
-    pass
+    if context.config.userdata.get('debug') and step.status == "failed":
+        post_mortem(step.exc_traceback)
 
 
 def after_tag(context, tag):
