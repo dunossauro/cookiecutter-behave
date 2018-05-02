@@ -14,3 +14,25 @@ Generate a new Cookiecutter template layout: `cookiecutter gh:z4r4tu5tr4/cookiec
 License
 -------
 This project is licensed under the terms of the [MIT License](/LICENSE)
+
+Estructure
+-------
+```
+.
+├── behave.ini
+├── example
+│   ├── data
+│   │   └── logging.json
+│   ├── features
+│   │   ├── environment.py
+│   │   ├── feature.feature
+│   │   └── steps
+│   │       └── steps.py
+│   ├── helpers
+│   │   └── constants.py
+│   └── modules
+│       └── mymodule.py
+├── __init__.py
+├── readme.md
+└── requirements.txt
+```
