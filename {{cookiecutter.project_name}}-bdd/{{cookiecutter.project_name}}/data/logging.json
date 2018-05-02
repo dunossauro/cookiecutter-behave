@@ -1,17 +1,20 @@
 {
-    "version": 1,
+    "version": 2,
     "disable_existing_loggers": false,
     "formatters": {
         "simple": {
             "format": "%(asctime)s [%(levelname)s] %(name)s - %(message)s"
-        }
+        },
+	    "debug":{
+	        "format": "s%(asctime)s:%(levelname)s:%(filename)s:%(lineno)s:%(message)s"
+	}
     },
 
     "handlers": {
         "console": {
             "class": "logging.StreamHandler",
-            "level": "DEBUG",
-            "formatter": "simple",
+            "level": "INFO",
+            "formatter": "debug",
             "stream": "ext://sys.stdout"
         },
 
@@ -27,9 +30,21 @@
     },
 
     "loggers": {
-        "warsawbdd": {
+        "console_logger": {
+            "level": "DEBUG",
+            "handlers": ["console"],
+            "propagate": "no"
+        },
+
+        "file_logger": {
             "level": "DEBUG",
             "handlers": ["debug_file_handler"],
+            "propagate": "no"
+        },
+
+        "dual_logger": {
+            "level": "DEBUG",
+            "handlers": ["debug_file_handler", "console"],
             "propagate": "no"
         }
     },
