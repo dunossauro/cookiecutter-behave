@@ -1,5 +1,5 @@
 {
-    "version": 2,
+    "version": 1,
     "disable_existing_loggers": false,
     "formatters": {
         "simple": {
@@ -13,7 +13,7 @@
     "handlers": {
         "console": {
             "class": "logging.StreamHandler",
-            "level": "INFO",
+            "level": "WARNING",
             "formatter": "debug",
             "stream": "ext://sys.stdout"
         },
@@ -22,7 +22,7 @@
             "class": "logging.handlers.RotatingFileHandler",
             "level": "DEBUG",
             "formatter": "simple",
-            "filename": "log/{{cookiecutter.project_name}}.log",
+            "filename": "log/e.log",
             "maxBytes": 10485760,
             "backupCount": 10,
             "encoding": "utf8"
