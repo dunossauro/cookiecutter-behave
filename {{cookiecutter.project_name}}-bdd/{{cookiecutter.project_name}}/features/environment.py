@@ -17,8 +17,7 @@ active_tag_matcher = ActiveTagMatcher(active_tag_value_provider)
 def before_all(context):
     userdata = context.config.userdata
     context.config_0 = userdata.get('config_0', 'False')
-    logger_type = userdata.get('logger', 'file_logger')
-    context.logger = setup_logger(logger_type)
+    context.logger = setup_logger()
 
 
 def before_feature(context, feature):
@@ -55,7 +54,7 @@ def after_all(context):
     pass
 
 
-def setup_logger(logger_name):
+def setup_logger():
     if not isdir(constants.LOG_FILE_DIR):
         makedirs(constants.LOG_FILE_DIR)
 
@@ -63,4 +62,4 @@ def setup_logger(logger_name):
         options = load(f)
 
     config.dictConfig(options)
-    return getLogger(logger_name)
+    return getLogger(__name__)
