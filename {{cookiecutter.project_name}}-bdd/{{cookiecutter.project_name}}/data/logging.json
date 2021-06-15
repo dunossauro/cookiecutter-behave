@@ -22,7 +22,7 @@
             "class": "logging.handlers.RotatingFileHandler",
             "level": "DEBUG",
             "formatter": "simple",
-            "filename": "log/e.log",
+            "filename": "log/log.log",
             "maxBytes": 10485760,
             "backupCount": 10,
             "encoding": "utf8"
