@@ -6,7 +6,7 @@
             "format": "%(asctime)s [%(levelname)s] %(name)s - %(message)s"
         },
 	    "debug":{
-	        "format": "s%(asctime)s:%(levelname)s:%(filename)s:%(lineno)s:%(message)s"
+	        "format": "%(asctime)s:%(levelname)s:%(filename)s:%(lineno)s:%(message)s"
 	}
     },
 
