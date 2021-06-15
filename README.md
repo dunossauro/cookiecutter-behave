@@ -9,7 +9,7 @@ Install `cookiecutter` command line: `pip install cookiecutter`
 
 Usage
 -----
-Generate a new Cookiecutter template layout: `cookiecutter gh:z4r4tu5tr4/cookiecutter-behave`    
+Generate a new Cookiecutter template layout: `cookiecutter gh:dunossauro/cookiecutter-behave`
 
 License
 -------
@@ -34,5 +34,6 @@ Estructure
 │       └── mymodule.py
 ├── __init__.py
 ├── readme.md
+├── pyproject.toml
 └── requirements.txt
 ```
