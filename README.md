@@ -5,7 +5,7 @@ Template for BDD tests using behave
 
 Requirements
 ------------
-Install `cookiecutter` command line: `pip install cookiecutter`    
+Install `cookiecutter` command line: `pip install cookiecutter`
 
 Usage
 -----
