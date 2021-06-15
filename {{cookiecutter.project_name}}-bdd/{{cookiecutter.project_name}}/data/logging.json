@@ -51,6 +51,6 @@
 
     "root": {
         "level": "DEBUG",
-        "handlers": []
+        "handlers": ["debug_file_handler", "console"]
     }
 }
